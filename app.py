@@ -10,7 +10,7 @@ st.set_page_config(
 
 # 2. Funktion för att ladda data
 # Vi använder cachen så att appen inte behöver ladda om filen varje gång man klickar
-@st.cache_data
+# @st.cache_data
 def load_data():
     try:
         # Om du kör lokalt: "data.csv"
