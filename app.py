@@ -101,7 +101,6 @@ st.markdown("""
 
 # 4. Huvudrubrik
 st.title("🤲 Dua & Dhikr Samling")
-st.write("En samling dagliga duor och påminnelser.")
 
 # 5. Filtrering (Valfritt men användbart)
 if not df.empty:
