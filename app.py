@@ -14,8 +14,8 @@ st.set_page_config(
 def load_data():
     try:
         # Om du kör lokalt: "data.csv"
-        # Om du kör på Streamlit Cloud kopplat till Github fungerar oftast samma sökväg
-        df = pd.read_csv("data.csv")
+        # Vi lägger till encoding='utf-8' för arabiska tecken och skipinitialspace=True för formateringen
+        df = pd.read_csv("data.csv", encoding='utf-8', skipinitialspace=True)
         return df
     except FileNotFoundError:
         st.error("Kunde inte hitta filen 'data.csv'. Se till att den ligger i samma mapp.")
